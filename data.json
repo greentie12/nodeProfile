@@ -1,0 +1,86 @@
+{
+  "projects": [
+    {
+      "id": 0,
+      "project_name": "AUTUMN",
+      "description": "Restaurant site incorporating HTML & CSS keyframe animations.",
+      "technologies": ["HTML", "CSS"],
+      "live_link": "https://greentie12.github.io/AutumnEat/",
+      "github_link": "https://github.com/greentie12/AutumnEat",
+      "thumbnail_url": "/images/autumn-screen.jpg",
+      "image_urls": [
+        "/images/landscape-screens/autumn-wide1.jpg",
+        "/images/landscape-screens/autumn-wide2.jpg",
+        "/images/landscape-screens/autumn-wide3.jpg"
+      ]
+    },
+
+    {
+      "id": 1,
+      "project_name": "BetterYou.LA",
+      "description": "Live yoga and wellness site.",
+      "technologies": ["HTML", "CSS", "JavaScript", "SASS", "Bootstrap"],
+      "live_link": "http://www.betteryou.la",
+      "github_link": "https://github.com/greentie12/betterYou",
+      "thumbnail_url": "/images/betteryou-screen.jpg",
+      "image_urls": [
+        "/images/landscape-screens/better-wide1.jpg",
+        "/images/landscape-screens/better-wide2.jpg"
+      ]
+    },
+
+    {
+      "id": 2,
+      "project_name": "Crypto API",
+      "description": "Cryptocurrency site tracking top 12 currencies with up to date data powered by the Messari.io API ",
+      "technologies": ["HTML", "CSS", "JavaScript", "JSON", "Public API"],
+      "live_link": "https://greentie12.github.io/cryptoAPI/",
+      "github_link": "https://github.com/greentie12/cryptoAPI",
+      "thumbnail_url": "/images/crypto-screen.jpg",
+      "image_urls": ["/images/landscape-screens/crypto-wide1.jpg"]
+    },
+
+    {
+      "id": 3,
+      "project_name": "Interactive Form Validation",
+      "description": "Interactive registration form for a fictional Full Stack conference. Form validation, conditional behavior and interactivity managed through JavaScript.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "live_link": "https://greentie12.github.io/interactiveForm/",
+      "github_link": "https://github.com/greentie12/interactiveForm",
+      "thumbnail_url": "/images/form.jpg",
+      "image_urls": [
+        "/images/landscape-screens/form-wide1.jpg",
+        "/images/landscape-screens/form-wide2.jpg"
+      ]
+    },
+
+    {
+      "id": 4,
+      "project_name": "Random Quotes",
+      "description": "App that displays random famous quotes each time a button is clicked or a set time is reached.",
+      "technologies": ["HTML", "CSS", "JavaScript", "OOP"],
+      "live_link": "https://greentie12.github.io/randomQuotes/",
+      "github_link": "https://github.com/greentie12/randomQuotes",
+      "thumbnail_url": "/images/quotes-screen.jpg",
+      "image_urls": [
+        "/images/landscape-screens/quote-wide1.jpg",
+        "/images/landscape-screens/quote-wide2.jpg"
+      ]
+    },
+
+    {
+      "id": 5,
+      "project_name": "OOP Game Show App",
+      "description": "Browser-based, word guessing game, using JavaScript and OOP (Object-Oriented Programming) to select a random, hidden phrase. A player tries to guess the phrase by selecting individual letters from an onscreen keyboard.",
+      "technologies": ["HTML", "CSS", "JavaScript"],
+      "live_link": "https://greentie12.github.io/gameShowApp/",
+      "github_link": "https://github.com/greentie12/gameShowApp",
+      "thumbnail_url": "/images/phrase-screen.png",
+      "image_urls": [
+        "/images/landscape-screens/phrase-wide0.png",
+        "/images/landscape-screens/phrase-wide1.png",
+        "/images/landscape-screens/phrase-wide2.png"
+      ]
+    }
+  ]
+}
