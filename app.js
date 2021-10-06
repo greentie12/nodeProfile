@@ -17,6 +17,7 @@ app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
+// routes variables
 const indexRoutes = require("./routes/index");
 const aboutRoutes = require("./routes/about");
 const projectRoutes = require("./routes/project");
