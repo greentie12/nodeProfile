@@ -10,3 +10,7 @@ Portfolio site with a landing page, about page and portfolio page
   - 404 errors directed to *page-not-found.pug* template
   - All other errors get assigned to 500 and directed to *error.pug* template
   - Link back to home page displayed
+
+* Customized CSS styling
+ 1. transition applied for hover to the .cell elements on the landing page for brightness and scale
+ 2. background-color changed on the top nav of the about and projects page - `.wrapper > .nav` 
