@@ -1,7 +1,7 @@
 const express = require("express");
 const path = require("path");
 const app = express();
-const port = 4001;
+const port = 3000;
 
 // require the projects and skills JSON data
 const { projects } = require("./data.json");
@@ -17,34 +17,13 @@ app.use(express.static("public"));
 app.use(express.json());
 app.use(express.urlencoded({ extended: false }));
 
-// GET home page
-app.get("/", (req, res, next) => {
-  res.render("index", { projects });
-});
+const indexRoutes = require("./routes/index");
+const aboutRoutes = require("./routes/about");
+const projectRoutes = require("./routes/project");
 
-// GET about page
-app.get("/about", (req, res, next) => {
-  res.render("about", { skills });
-});
-
-// GET project page
-app.get("/project/:id", (req, res, next) => {
-  const projectId = req.params.id;
-  const project = projects.find(({ id }) => id === +projectId);
-  // checks if the project exists in the projects object
-  if (project) {
-    res.render("project", { projects, id: projectId });
-  }
-  // error handler if the project id does not exists
-  else {
-    const err = new Error();
-    res.status(404);
-    err.message = "Looks like this page does not exist";
-    const errorMessage = err.message;
-    const code = res.statusCode;
-    res.render("page-not-found", { errorMessage, code });
-  }
-});
+app.use(indexRoutes);
+app.use("/about", aboutRoutes);
+app.use("/project", projectRoutes);
 
 // Error Handlers
 

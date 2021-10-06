@@ -365,3 +365,22 @@ nav a span {
     max-width: 1200px;
   }
 }
+
+/* Custom CSS Styling*/
+
+.wrapper > .nav {
+  background-color: #333;
+}
+
+.wrapper > .nav a {
+  color: #fff;
+}
+
+.cell {
+  filter: brightness(75%);
+  transition: all 0.3s ease-in;
+}
+.cell:hover {
+  filter: brightness(100%);
+  transform: scale(1.02);
+}
