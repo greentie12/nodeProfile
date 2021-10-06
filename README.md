@@ -1,5 +1,5 @@
 # Node.js / Express Portfolio README
-Portfolio site with a landing page, about page and protfolio page
+Portfolio site with a landing page, about page and portfolio page
 
 ## Extra Credit
 * Customized package.json file
