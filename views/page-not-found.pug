@@ -1,0 +1,12 @@
+extends layout.pug
+
+block content
+	nav.nav
+		a(href='/')
+			span &larr;
+				|  Back
+
+	article.box
+		h1= `Error: ${code}`
+		h2= `${errorMessage}`
+		img(src="/images/error404.jpg", alt="404 image")

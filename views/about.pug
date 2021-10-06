@@ -28,17 +28,8 @@ block content
 
         //- Replace skills below with your own skills — at this point, you should be able to list as many as ten skills
         ul
-          li HTML
-          li CSS
-          li JavaScript
-          li SQL
-          li Git and GitHub
-          li VS Code
-          li OOP
-          li Fetch and Public APIs
-          li Node.js
-          li Express
-          li Pug
+          each skill in skills
+            li= skill
 
         h6 Contact Info
         
@@ -48,7 +39,6 @@ block content
           li
             a(href="mailto:tdominguez@fordham.edu") tdominguez@fordham.edu   
 
-        //- Add URLs to the hrefs below to link to your social media accounts - feel free to use non-personal links to social media home pages if you prefer
         a.btn-link(href="https://www.linkedin.com/in/tainodominguez/" target="_blank") LinkedIn
         a.btn-link(href="https://github.com/greentie12" target="_blank") GitHub
         a.btn-link(href="https://greentie12.github.io/" target="_blank") Personal Site
