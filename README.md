@@ -4,8 +4,6 @@
 
 Portfolio site
 
-## Getting Started
-
 ### Dependencies
 
 * Describe any prerequisites, libraries, OS version, etc., needed before installing program.
