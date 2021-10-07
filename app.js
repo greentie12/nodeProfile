@@ -36,12 +36,18 @@ app.use((req, res, next) => {
   const errorMessage = err.message;
   const code = res.statusCode;
   res.render("page-not-found", { errorMessage, code, err });
+  console.log(`Error ${code} - ${errorMessage}`);
 });
 
 // Global handler to catch 404 or any other error
 app.use((err, req, res, next) => {
   if (err.status === 404) {
-    res.status(404).render("error");
+    res.status(404);
+    err.message = "Not Found. Looks like this page does not exist";
+    const errorMessage = err.message;
+    const code = res.statusCode;
+    res.render("page-not-found", { errorMessage, code, err });
+    console.log(`Error ${code} - ${errorMessage}`);
   } else {
     res.status(500);
     err.message =
@@ -49,6 +55,7 @@ app.use((err, req, res, next) => {
     const errorMessage = err.message;
     const code = res.statusCode;
     res.render("error", { code, errorMessage });
+    console.log(`Error ${code} - ${errorMessage}`);
   }
 });
 

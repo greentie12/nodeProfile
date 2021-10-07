@@ -15,10 +15,11 @@ router.get("/:id", (req, res, next) => {
   else {
     const err = new Error();
     res.status(404);
-    err.message = "Looks like this page does not exist";
+    err.message = "Not Found. Looks like this page does not exist";
     const errorMessage = err.message;
     const code = res.statusCode;
     res.render("page-not-found", { errorMessage, code });
+    console.log(`Error ${code} - ${errorMessage}`);
   }
 });
 
